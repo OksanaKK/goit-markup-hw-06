@@ -461,7 +461,6 @@
           <use href="./images/sprite.svg#icon-send" width="24px" height="24px"></use>
         </svg>
         </div>
-        
         </form>
       </div>
     </footer>
@@ -479,14 +478,14 @@
           <label class="contact-form-field">
             <span class="label-name">Имя</span>
             <span class="contact-form-input-wrapper"> 
-          <input name="user_name" class="contact-form-input" type="text" required>
+          <input name="user_name" class="contact-form-input" type="text" minlength="3" required>
           <svg class="contact-form-icon" width="18px" height="18px"><use href="./images/sprite.svg#icon-person-modal" ></use></svg>
         </span>
         </label>
         <label class="contact-form-field">
           <span class="label-name">Телефон</span> 
           <span class="contact-form-input-wrapper">
-          <input name="user_phone" class="contact-form-input" type="text" required>
+          <input name="user_phone" class="contact-form-input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="050-xxx-xx-xx" required>
           <svg class="contact-form-icon" width="18px" height="18px"><use href="./images/sprite.svg#icon-phone-modal"></use></svg>
         </span>
         </label>

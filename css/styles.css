@@ -562,7 +562,7 @@ display: flex;
   display: block;
   margin: 0 auto;
   min-width: 200px;
-  padding: 10px 32px;
+  padding: 10px 62px 10px 30px;
   margin-left: 12px;
   cursor: pointer;
   font-weight: 700;
@@ -575,7 +575,7 @@ display: flex;
 }
 .send-btn-icon{
   position: absolute;
-  right: 13px;
+  right: 28px;
   transform:translateY(50%);
   width: 24px;
   height: 24px;
