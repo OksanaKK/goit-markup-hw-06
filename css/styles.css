@@ -528,9 +528,11 @@ background-color: var(--accent-color);
 }
 .footer-input-wrapper {
 display: flex;
+justify-content: center;
+align-items: center;
 }
 .footer-email-input {
-  width: 100%;
+  min-width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -559,10 +561,12 @@ display: flex;
   letter-spacing: 0.03em;
 }
 .subscribe-btn {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   min-width: 200px;
-  padding: 10px 62px 10px 30px;
+  padding: 10px 28px;
   margin-left: 12px;
   cursor: pointer;
   font-weight: 700;
@@ -571,14 +575,14 @@ display: flex;
   color: var(--secondary-title-text-color);
   background-color: var(--secondary-text-color);
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: transparent;
 }
 .send-btn-icon{
-  position: absolute;
-  right: 28px;
-  transform:translateY(50%);
   width: 24px;
   height: 24px;
+  margin-left: 10px;
+  
 }
 
 /*====portfolio start=====*/
@@ -707,6 +711,10 @@ display: flex;
   transform: translateY(0%);
  }
 
+ /*====portfolio ends=====*/
+
+ /*====modal starts=====*/
+
 .backdrop {
   position:fixed;
   top: 0;
@@ -739,7 +747,7 @@ display: flex;
   text-align: center;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   
 }
 
@@ -758,30 +766,29 @@ display: flex;
   padding: 0;
   cursor: pointer;
 }
-.contact-form-field{
-  display: block;
-}
+
 .contact-form-input{
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 42px;
+  margin-bottom: 10px;
 }
 .contact-form-input:focus{
   outline: none;
   border-color: var(--accent-color);
 }
-
 .label-name {
   display: block;
   margin-bottom:4px;
   font-size: 12px;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.17;
   letter-spacing:0.01em;
   color: var(--primary-text-color-text);
 }
+
 .contact-form-input-wrapper{
   position: relative;
   
@@ -797,9 +804,15 @@ display: flex;
   fill: var(--accent-color);
 }
 .contact-form-field {
-  margin-bottom: 10px;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing:0.01em;
+  color: var(--primary-text-color-text);
 }
 .contact-form-message{
+  display: block;
   width: 100%;
   height: 124px; 
   padding: 12px 16px;
@@ -815,16 +828,17 @@ display: flex;
 }
 
 .contact-form-message::placeholder {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   letter-spacing: 0.01em;
-  line-height: 1.7;
+  line-height: 1.17;
   color: rgba(117, 117, 117, 0.5);
 }
 
  .contact-form-checkbox-label{
    display: flex;
    align-items: center;
+   justify-content: center;
    font-size: 14px;
    font-weight: 400;
    line-height: 1.7;
@@ -834,8 +848,8 @@ display: flex;
  .contact-form-checkbox-label::before {
    content: '';
    display: inline-block;
-   width: 18px;
-   height: 18px;
+   width: 16px;
+   height: 15px;
    border: 1px solid #212121;
    cursor: pointer;
    margin-right:8px ;
@@ -845,10 +859,12 @@ display: flex;
    outline: 1px solid var(--accent-color);
  }
 
-
  .contact-form-checkbox:checked +.contact-form-checkbox-label::before {
 background-image: url('../images/icon-check.svg');
+border: 1px solid var(--accent-color);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .contact-form-checkbox-wrapper {
   display: block;
   margin-bottom:30px;
@@ -860,6 +876,8 @@ background-image: url('../images/icon-check.svg');
    line-height: 1.7;
    letter-spacing: 0.03em;
  }
+
+
 .contact-form-submit-btn {
   display: block;
   margin: 0 auto;
