@@ -380,7 +380,7 @@ fill: currentColor;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #ffff;
   fill: #AFB1B8;
   transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
  }
